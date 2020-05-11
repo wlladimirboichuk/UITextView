@@ -32,6 +32,9 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="hsL-kM-OjC">
+                                <rect key="frame" x="279" y="134" width="94" height="32"/>
+                            </stepper>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -42,12 +45,15 @@
                             <constraint firstItem="SOJ-vB-et5" firstAttribute="top" secondItem="laf-Dc-rz9" secondAttribute="bottom" constant="35.5" id="Qwg-uA-k8m"/>
                             <constraint firstItem="SOJ-vB-et5" firstAttribute="leading" secondItem="laf-Dc-rz9" secondAttribute="trailing" constant="-150" id="RaJ-78-05X"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SOJ-vB-et5" secondAttribute="bottom" constant="268" id="Wxa-B8-rga"/>
+                            <constraint firstItem="hsL-kM-OjC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="90" id="aEM-ea-Abh"/>
                             <constraint firstItem="laf-Dc-rz9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="efM-8G-BCT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hsL-kM-OjC" secondAttribute="trailing" constant="41" id="zY4-g9-vRA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="countLabel" destination="laf-Dc-rz9" id="PSC-0g-3B5"/>
+                        <outlet property="stepper" destination="hsL-kM-OjC" id="tjg-ak-Cyq"/>
                         <outlet property="textView" destination="SOJ-vB-et5" id="YeI-tW-Kgm"/>
                     </connections>
                 </viewController>
